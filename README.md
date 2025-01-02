@@ -141,7 +141,7 @@ public class TaskController {
                     task.setStatus(updatedTask.getStatus());
                     return taskRepository.save(task);
                 })
-                .orElseThrow(() -> new RuntimeException("Task not found with id " + id)); // Лучше создать кастомное исключение
+                .orElseThrow(() -> new RuntimeException("Task not found with id " + id)); 
     }
 
     // Удалить задачу
